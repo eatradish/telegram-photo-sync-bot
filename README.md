@@ -15,7 +15,7 @@
 // Arch 中
 yaourt -S python3 python-pip
 // 其他发行版应该是 python3-pip
-pip(3) install install python-telegram-bot --upgrade
+pip(3) install install python-telegram-bot==6.1b0
 python(3) file-python.bot.py
 ```
 
