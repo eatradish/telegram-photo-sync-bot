@@ -2,10 +2,9 @@ import telegram
 import datetime
 import random
 
-bot = telegram.Bot(token='393669135:AAFvEkohrcs-X7yrfy0fzVZmZPCEV8hbqdA')
+bot = telegram.Bot(token='你的 TOKEN')
 
 def download():
-        #print([u.message.photo for u in updates if u.message.photo])
     a = 0
     while True:
         updates = bot.get_updates()
