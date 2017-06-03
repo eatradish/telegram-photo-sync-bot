@@ -5,8 +5,6 @@ import random
 bot = telegram.Bot(token='你的 TOKEN')
 
 def download():
-        #print([u.message.photo for u in updates if u.message.photo])
-    a = []
     u = []
     updates = []
     while True:
