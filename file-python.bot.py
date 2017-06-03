@@ -18,6 +18,6 @@ def download():
             if index.message.photo:
                 if u != a:
                     photo_file = bot.get_file(index.message.photo[-1].file_id)
-                    photo_file.download(custom_path='/var/www/file/ACG-img/' + 'photo-' + repr(datetime.datetime.now().timestamp()) + repr(random.random()*10) + '.jpg', timeout = 30)
+                    photo_file.download(custom_path='/var/www/file/ACG-img/' + 'photo-' + repr(datetime.datetime.now().timestamp()) + repr(random.random()*10) + '.jpg', timeout = 300)
 
 download()
