@@ -16,8 +16,7 @@ def download():
         #list(map(lambda x: x[0]-x[1], zip(v2, v1)))
         for index in u:
             if index.message.photo:
-                if u != a:
-                    photo_file = bot.get_file(index.message.photo[-1].file_id)
-                    photo_file.download(custom_path='/var/www/file/ACG-img/' + 'photo-' + repr(datetime.datetime.now().timestamp()) + repr(random.random()*10) + '.jpg', timeout = 300)
+                photo_file = bot.get_file(index.message.photo[-1].file_id)
+                photo_file.download(custom_path='/var/www/file/ACG-img/' + 'photo-' + repr(datetime.datetime.now().timestamp()) + repr(random.random()*10) + '.jpg', timeout = 300)
 
 download()
